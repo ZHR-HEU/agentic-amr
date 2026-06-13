@@ -1,0 +1,32 @@
+You are an RF spectrum analyst. For each numbered case, identify the most likely modulation of a low-SNR signal by reasoning about which real-world radio system operates at the given carrier frequency. OUTPUT EXACTLY one line per case as '<k>: <MOD>', where <MOD> is copied verbatim from that case's candidate list. Output ONLY those lines, no commentary.
+
+Case 0 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 1 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 2 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 3 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 4 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 5 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 6 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 7 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 8 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 9 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 10 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 11 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 12 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 13 | carrier 157 MHz | band: marine VHF maritime mobile voice band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 14 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 15 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 16 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 17 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 18 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 19 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 20 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 21 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 22 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 23 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 24 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 25 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 26 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 27 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+
+Now output the 28 lines.

@@ -1,0 +1,32 @@
+You are an RF spectrum analyst. For each numbered case, identify the most likely modulation of a low-SNR signal by reasoning about which real-world radio system operates at the given carrier frequency, and which candidate is most consistent with the (unreliable) classifier hint. OUTPUT EXACTLY one line per case as '<k>: <MOD>', where <MOD> is copied verbatim from that case's candidate list. Output ONLY those lines, no commentary.
+
+Case 0 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(1.0), GMSK(0.0), AM-DSB-WC(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 1 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(0.373), AM-DSB-WC(0.143), 8PSK(0.09) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 2 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(1.0), GMSK(0.0), AM-DSB-WC(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 3 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: 8PSK(0.142), QPSK(0.139), 16APSK(0.138) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 4 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(1.0), GMSK(0.0), AM-DSB-WC(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 5 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: GMSK(0.208), QPSK(0.171), 16APSK(0.162) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 6 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: BPSK(0.132), 32APSK(0.131), GMSK(0.13) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 7 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(0.271), 8PSK(0.122), GMSK(0.122) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 8 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(1.0), AM-DSB-WC(0.0), GMSK(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 9 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(0.333), AM-DSB-WC(0.164), GMSK(0.099) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 10 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(0.998), AM-DSB-WC(0.001), GMSK(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 11 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(1.0), GMSK(0.0), AM-DSB-WC(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 12 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(1.0), GMSK(0.0), AM-DSB-WC(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 13 | carrier 157 MHz | band: marine VHF maritime mobile voice band | classifier top-3: FM(1.0), AM-DSB-WC(0.0), 8PSK(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 14 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: AM-DSB-WC(1.0), BPSK(0.0), 32APSK(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 15 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: AM-DSB-WC(1.0), BPSK(0.0), 32APSK(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 16 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: 8PSK(0.141), QPSK(0.14), GMSK(0.14) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 17 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: 8PSK(0.147), 16APSK(0.143), GMSK(0.139) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 18 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: QPSK(0.134), 8PSK(0.133), 16APSK(0.131) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 19 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: GMSK(0.286), AM-DSB-WC(0.141), 16APSK(0.137) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 20 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: AM-DSB-WC(0.229), 8PSK(0.169), GMSK(0.147) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 21 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: AM-DSB-WC(0.996), BPSK(0.004), QPSK(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 22 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: AM-DSB-WC(1.0), BPSK(0.0), 32APSK(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 23 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: 8PSK(0.144), QPSK(0.139), 16APSK(0.133) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 24 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: AM-DSB-WC(1.0), BPSK(0.0), 32APSK(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 25 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: FM(0.184), 8PSK(0.135), 16APSK(0.134) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 26 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: AM-DSB-WC(0.279), 8PSK(0.192), 16APSK(0.147) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 27 | carrier 121.5 MHz | band: aviation VHF emergency 'Guard' voice channel | classifier top-3: GMSK(0.164), 8PSK(0.159), 16APSK(0.155) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+
+Now output the 28 lines.

@@ -1,0 +1,32 @@
+You are an RF spectrum analyst. For each numbered case, identify the most likely modulation of a low-SNR signal by reasoning about which real-world radio system operates at the given carrier frequency, and which candidate is most consistent with the (unreliable) classifier hint. OUTPUT EXACTLY one line per case as '<k>: <MOD>', where <MOD> is copied verbatim from that case's candidate list. Output ONLY those lines, no commentary.
+
+Case 28 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: FM(0.321), AM-DSB-WC(0.125), GMSK(0.113) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 29 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: 8PSK(0.142), QPSK(0.142), GMSK(0.141) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 30 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: 8PSK(0.139), QPSK(0.136), 16APSK(0.136) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 31 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: BPSK(0.912), QPSK(0.083), 8PSK(0.002) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 32 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: 8PSK(0.143), QPSK(0.142), GMSK(0.14) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 33 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: AM-DSB-WC(0.131), FM(0.129), 8PSK(0.127) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 34 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: BPSK(1.0), QPSK(0.0), 16APSK(0.0) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 35 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: GMSK(0.184), 16APSK(0.167), 8PSK(0.167) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 36 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: AM-DSB-WC(0.148), FM(0.136), GMSK(0.125) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 37 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: 8PSK(0.142), QPSK(0.139), 16APSK(0.138) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 38 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: BPSK(0.982), QPSK(0.013), 32APSK(0.003) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 39 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: BPSK(0.978), 32APSK(0.008), 16APSK(0.007) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 40 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: GMSK(0.143), 8PSK(0.141), 16APSK(0.139) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 41 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | classifier top-3: 8PSK(0.13), 16APSK(0.13), AM-DSB-WC(0.127) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 42 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: GMSK(0.91), 8PSK(0.054), QPSK(0.029) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 43 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: GMSK(0.832), 8PSK(0.073), QPSK(0.057) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 44 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: 8PSK(0.138), QPSK(0.137), GMSK(0.137) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 45 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: AM-DSB-WC(0.149), 8PSK(0.14), 16APSK(0.138) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 46 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: GMSK(0.138), 32APSK(0.136), 16APSK(0.134) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 47 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: 8PSK(0.161), QPSK(0.154), 16APSK(0.153) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 48 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: GMSK(0.295), 8PSK(0.196), 16APSK(0.18) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 49 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: 8PSK(0.137), QPSK(0.134), 16APSK(0.132) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 50 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: GMSK(0.202), QPSK(0.16), 8PSK(0.159) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 51 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: AM-DSB-WC(0.173), 16APSK(0.154), GMSK(0.153) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 52 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: 8PSK(0.156), QPSK(0.151), 16APSK(0.149) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 53 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: GMSK(0.21), 8PSK(0.188), 16APSK(0.182) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 54 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: GMSK(0.969), 8PSK(0.019), QPSK(0.007) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 55 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | classifier top-3: FM(0.186), 16APSK(0.131), 32APSK(0.128) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+
+Now output the 28 lines.

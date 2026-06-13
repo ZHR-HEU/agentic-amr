@@ -1,0 +1,32 @@
+You are an RF spectrum analyst. For each numbered case, identify the most likely modulation of a low-SNR signal by reasoning about which real-world radio system operates at the given carrier frequency. OUTPUT EXACTLY one line per case as '<k>: <MOD>', where <MOD> is copied verbatim from that case's candidate list. Output ONLY those lines, no commentary.
+
+Case 28 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 29 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 30 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 31 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 32 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 33 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 34 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 35 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 36 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 37 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 38 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 39 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 40 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 41 | carrier 1227.6 MHz | band: GNSS GPS L2 navigation band | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 42 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 43 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 44 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 45 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 46 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 47 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 48 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 49 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 50 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 51 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 52 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 53 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 54 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+Case 55 | carrier 162 MHz | band: maritime AIS transponder band (161.975/162.025 MHz) | candidates: 16APSK, 32APSK, 8PSK, AM-DSB-WC, BPSK, FM, GMSK, QPSK
+
+Now output the 28 lines.

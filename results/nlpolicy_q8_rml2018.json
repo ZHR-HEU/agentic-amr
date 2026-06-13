@@ -1,0 +1,62 @@
+{
+  "dataset": "rml2018",
+  "model": "Qwen3-8B",
+  "policies": {
+    "accuracy": {
+      "novel": false,
+      "J_oracle": 0.6727083333333334,
+      "J_gbdt": -0.0854687500000001,
+      "J_llm": -0.03760416666666654,
+      "viol_gbdt": 0.0,
+      "viol_llm": 0.0
+    },
+    "latency": {
+      "novel": false,
+      "J_oracle": 0.5742187499999986,
+      "J_gbdt": 0.012656250000000133,
+      "J_llm": 0.010000000000000245,
+      "viol_gbdt": 0.0,
+      "viol_llm": 0.0
+    },
+    "balanced": {
+      "novel": false,
+      "J_oracle": 0.6603124999999973,
+      "J_gbdt": 0.01802083333333346,
+      "J_llm": -0.04911458333333323,
+      "viol_gbdt": 0.0,
+      "viol_llm": 0.0
+    },
+    "no_reject": {
+      "novel": true,
+      "J_oracle": 0.33531249999999807,
+      "J_gbdt": 0.011666666666666811,
+      "J_llm": -0.04510416666666653,
+      "viol_gbdt": 0.010416666666666666,
+      "viol_llm": 0.0
+    },
+    "no_complex": {
+      "novel": true,
+      "J_oracle": 0.5278124999999989,
+      "J_gbdt": 0.011354166666666781,
+      "J_llm": 0.04656250000000014,
+      "viol_gbdt": 0.07291666666666667,
+      "viol_llm": 0.0
+    },
+    "safety_reject": {
+      "novel": true,
+      "J_oracle": 0.6603124999999973,
+      "J_gbdt": 0.01802083333333346,
+      "J_llm": -0.02854166666666733,
+      "viol_gbdt": 0.0,
+      "viol_llm": 0.0
+    },
+    "light_only": {
+      "novel": true,
+      "J_oracle": 0.31000000000000033,
+      "J_gbdt": -0.009999999999999877,
+      "J_llm": -0.014999999999999833,
+      "viol_gbdt": 0.125,
+      "viol_llm": 0.0
+    }
+  }
+}

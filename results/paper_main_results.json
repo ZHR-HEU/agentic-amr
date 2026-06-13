@@ -1,0 +1,49 @@
+{
+  "paper": "Zero-Shot Compositional Tool Planning for Adaptive Online Modulation Recognition with an IQ-Free LLM Controller",
+  "intent_benchmark": {
+    "n_intents": 78,
+    "base_intents": 38,
+    "novel_intents": 40,
+    "metric": "tool-set F1",
+    "rows": [
+      {"method": "fixed", "base": 0.219, "novel": 0.263, "ext": 0.250},
+      {"method": "router-nn (TF-IDF NN)", "base": 1.000, "novel": 0.514, "ext": 0.475},
+      {"method": "router-ml (TF-IDF multi-label)", "base": 0.974, "novel": 0.507, "ext": 0.475},
+      {"method": "router-char (char NN)", "base": 1.000, "novel": 0.567, "ext": 0.579},
+      {"method": "router-ml-char (char multi-label)", "base": 0.952, "novel": 0.567, "ext": 0.579},
+      {"method": "router-desc (zero-shot, tool-desc)", "base": 0.846, "novel": 0.477, "ext": 0.673},
+      {"method": "router-emb (8B embed, NN/ML)", "base": null, "novel": 0.501, "ext": 0.469},
+      {"method": "best router (per-intent max)", "base": null, "novel": 0.613, "ext": 0.673},
+      {"method": "Controller (GPT-5.5)", "base": null, "novel": 0.921, "ext": null},
+      {"method": "Controller (Qwen3-30B-A3B)", "base": 0.930, "novel": 0.902, "novel_ci95": [0.852, 0.945], "ext": null},
+      {"method": "Controller (Qwen3-8B)", "base": 0.991, "novel": 0.895, "novel_ci95": [0.833, 0.947], "ext": 0.966},
+      {"method": "Controller (Gemma-4-12B)", "base": 0.965, "novel": 0.876, "novel_ci95": [0.813, 0.932], "ext": null},
+      {"method": "Controller (Mistral-7B)", "base": 0.982, "novel": 0.856, "novel_ci95": [0.801, 0.907], "ext": null}
+    ]
+  },
+  "validity_checks": {
+    "blind_relabeling_fleiss_kappa": 0.894,
+    "pairwise_cohen_kappa_range": [0.883, 0.908],
+    "controller_range_under_relabeling": [0.875, 0.902],
+    "best_router_range_under_relabeling": [0.585, 0.601],
+    "cross_model_scenarios": {
+      "n_intents": 16,
+      "controller_qwen3_8b": 0.966,
+      "best_router": 0.673
+    }
+  },
+  "closed_loop": {
+    "n_scenarios": 8,
+    "n_seeds": 5,
+    "n_trials_per_model": 40,
+    "metric": "correct-action rate",
+    "rows": [
+      {"method": "fixed pipeline", "correct_action": 0.250, "self_correction": null},
+      {"method": "learned router", "correct_action": 0.250, "self_correction": null},
+      {"method": "ReAct (Mistral-7B)", "correct_action": 0.250, "self_correction": 0.000},
+      {"method": "ReAct (Gemma-4-12B)", "correct_action": 0.200, "self_correction": 0.125},
+      {"method": "ReAct (Qwen3-8B)", "correct_action": 0.350, "correct_action_ci95": [0.21, 0.52], "self_correction": 0.000},
+      {"method": "ReAct (Qwen3-30B-A3B)", "correct_action": 0.375, "correct_action_ci95": [0.23, 0.54], "self_correction": 0.375}
+    ]
+  }
+}

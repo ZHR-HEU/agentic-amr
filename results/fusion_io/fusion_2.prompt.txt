@@ -1,0 +1,32 @@
+You are an RF spectrum analyst. For each numbered case, identify the most likely modulation of a low-SNR signal by reasoning about which real-world radio system operates at the given carrier frequency, and which candidate is most consistent with the (unreliable) classifier hint. OUTPUT EXACTLY one line per case as '<k>: <MOD>', where <MOD> is copied verbatim from that case's candidate list. Output ONLY those lines, no commentary.
+
+Case 56 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: GMSK(0.213), 8PSK(0.208), 16APSK(0.19) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 57 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: FM(0.211), AM-DSB-WC(0.199), 16APSK(0.108) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 58 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: 32APSK(0.134), FM(0.13), 8PSK(0.13) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 59 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: 8PSK(0.131), QPSK(0.131), 16APSK(0.13) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 60 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: 32APSK(0.244), GMSK(0.204), 16APSK(0.179) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 61 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: 8PSK(0.137), QPSK(0.136), 16APSK(0.134) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 62 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: GMSK(0.201), 8PSK(0.196), QPSK(0.17) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 63 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: GMSK(0.276), 16APSK(0.149), QPSK(0.144) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 64 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: GMSK(0.172), FM(0.139), 8PSK(0.135) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 65 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: 8PSK(0.13), 16APSK(0.129), QPSK(0.128) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 66 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: FM(0.136), GMSK(0.13), 8PSK(0.13) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 67 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: 32APSK(0.17), GMSK(0.16), 8PSK(0.159) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 68 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: GMSK(0.141), 8PSK(0.14), 16APSK(0.139) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 69 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: QPSK(0.132), 8PSK(0.132), 16APSK(0.13) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 70 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: 8PSK(0.379), 16APSK(0.231), GMSK(0.2) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 71 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: AM-DSB-WC(0.212), GMSK(0.159), 16APSK(0.144) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 72 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: GMSK(0.484), 8PSK(0.178), 16APSK(0.174) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 73 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: GMSK(0.139), 8PSK(0.139), 16APSK(0.137) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 74 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: FM(0.455), AM-DSB-WC(0.128), 16APSK(0.082) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 75 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: FM(0.189), GMSK(0.128), 16APSK(0.127) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 76 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: AM-DSB-WC(0.172), 16APSK(0.124), 8PSK(0.122) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 77 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: 8PSK(0.133), QPSK(0.132), 16APSK(0.131) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 78 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: GMSK(0.23), QPSK(0.188), 8PSK(0.184) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 79 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: GMSK(0.837), 8PSK(0.131), QPSK(0.024) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 80 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: GMSK(0.226), 32APSK(0.159), QPSK(0.158) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 81 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: AM-DSB-WC(0.215), 16APSK(0.128), 8PSK(0.127) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 82 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: AM-DSB-WC(0.134), FM(0.128), 8PSK(0.128) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+Case 83 | carrier 11700 MHz | band: Ku-band DVB-S2 satellite TV downlink | classifier top-3: FM(0.243), GMSK(0.143), 16APSK(0.139) | candidates: QPSK, 8PSK, 16APSK, 32APSK
+
+Now output the 28 lines.

@@ -1,0 +1,233 @@
+You are routing an online modulation classifier among 4 specialists (#0 clean/MID-SNR, #1 fading/MID-SNR, #2 clean/LOW-SNR, #3 interference/MID-SNR). Answer the independent CASES below; each contains its own context and labeled examples. For each CASE k output EXACTLY one line 'k: <0|1|2|3>'. Output ONLY those lines.
+
+=== CASE 0 ===
+Vehicular online AMR. Four specialists: #0 clean/MID-SNR, #1 multipath-FADING/MID-SNR, #2 clean/LOW-SNR, #3 co-channel-INTERFERENCE/MID-SNR. The SNR estimate LAGS reality, so use the TREND over time to anticipate transitions.
+Labeled examples from PAST drives (which specialist turned out correct) -- learn the mapping:
+  SNR~2dB fading=0.45 interf=2.98 conf[0.28,0.26,0.31,0.28] trend=+0.0 -> CORRECT specialist #3
+  SNR~13dB fading=0.79 interf=2.50 conf[0.98,0.97,0.30,1.00] trend=+0.0 -> CORRECT specialist #0
+  SNR~16dB fading=0.70 interf=1.93 conf[0.28,0.25,0.34,0.28] trend=+0.0 -> CORRECT specialist #0
+  SNR~9dB fading=0.91 interf=10.83 conf[0.83,0.39,0.69,0.64] trend=-0.4 -> CORRECT specialist #0
+  SNR~7dB fading=0.52 interf=5.80 conf[0.58,0.53,0.64,0.58] trend=+0.2 -> CORRECT specialist #0
+  SNR~13dB fading=0.57 interf=2.10 conf[0.46,0.26,0.35,0.30] trend=+0.4 -> CORRECT specialist #0
+  SNR~8dB fading=0.67 interf=4.75 conf[0.99,0.60,0.37,0.94] trend=-0.6 -> CORRECT specialist #0
+  SNR~17dB fading=0.88 interf=11.21 conf[0.51,0.50,0.78,0.76] trend=+0.0 -> CORRECT specialist #0
+  SNR~-2dB fading=0.28 interf=2.69 conf[0.72,0.43,0.36,0.64] trend=-0.6 -> CORRECT specialist #0
+  SNR~19dB fading=0.86 interf=10.06 conf[0.62,0.47,0.59,0.52] trend=+0.3 -> CORRECT specialist #0
+  SNR~12dB fading=0.68 interf=1.55 conf[0.28,0.26,0.34,0.29] trend=-0.0 -> CORRECT specialist #0
+  SNR~0dB fading=0.37 interf=3.23 conf[0.27,0.27,0.28,0.28] trend=-0.2 -> CORRECT specialist #0
+  SNR~1dB fading=0.39 interf=3.11 conf[0.29,0.26,0.28,0.28] trend=+0.2 -> CORRECT specialist #1
+  SNR~2dB fading=0.32 interf=2.82 conf[0.27,0.36,0.26,0.28] trend=-1.1 -> CORRECT specialist #3
+  SNR~-2dB fading=0.48 interf=3.24 conf[0.28,0.45,0.27,0.27] trend=-0.1 -> CORRECT specialist #3
+  SNR~23dB fading=0.71 interf=1.70 conf[0.27,0.71,0.34,0.29] trend=+0.5 -> CORRECT specialist #0
+  SNR~11dB fading=0.88 interf=9.41 conf[0.51,0.43,0.33,0.46] trend=+0.9 -> CORRECT specialist #1
+  SNR~13dB fading=0.71 interf=2.00 conf[0.28,0.27,0.34,0.29] trend=+0.2 -> CORRECT specialist #3
+  SNR~2dB fading=0.69 interf=1.23 conf[1.00,1.00,0.32,1.00] trend=-0.1 -> CORRECT specialist #0
+  SNR~13dB fading=0.75 interf=2.06 conf[0.29,0.86,0.34,0.28] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.42 interf=2.73 conf[0.30,0.26,0.28,0.30] trend=-0.4 -> CORRECT specialist #1
+  SNR~13dB fading=0.72 interf=2.03 conf[0.27,0.23,0.34,0.28] trend=-0.4 -> CORRECT specialist #3
+  SNR~3dB fading=0.32 interf=2.95 conf[0.27,0.25,0.27,0.29] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.61 interf=1.64 conf[0.31,0.26,0.34,0.29] trend=-1.0 -> CORRECT specialist #3
+
+Recent history (oldest->newest):
+  t=0: SNR~7dB fading=0.74 interf=1.55 conf[0.28,0.26,0.34,0.29]
+Elapsed: t=0/130. Pick the least-mismatched specialist.
+
+=== CASE 1 ===
+Vehicular online AMR. Four specialists: #0 clean/MID-SNR, #1 multipath-FADING/MID-SNR, #2 clean/LOW-SNR, #3 co-channel-INTERFERENCE/MID-SNR. The SNR estimate LAGS reality, so use the TREND over time to anticipate transitions.
+Labeled examples from PAST drives (which specialist turned out correct) -- learn the mapping:
+  SNR~2dB fading=0.45 interf=2.98 conf[0.28,0.26,0.31,0.28] trend=+0.0 -> CORRECT specialist #3
+  SNR~13dB fading=0.79 interf=2.50 conf[0.98,0.97,0.30,1.00] trend=+0.0 -> CORRECT specialist #0
+  SNR~16dB fading=0.70 interf=1.93 conf[0.28,0.25,0.34,0.28] trend=+0.0 -> CORRECT specialist #0
+  SNR~9dB fading=0.91 interf=10.83 conf[0.83,0.39,0.69,0.64] trend=-0.4 -> CORRECT specialist #0
+  SNR~7dB fading=0.52 interf=5.80 conf[0.58,0.53,0.64,0.58] trend=+0.2 -> CORRECT specialist #0
+  SNR~13dB fading=0.57 interf=2.10 conf[0.46,0.26,0.35,0.30] trend=+0.4 -> CORRECT specialist #0
+  SNR~8dB fading=0.67 interf=4.75 conf[0.99,0.60,0.37,0.94] trend=-0.6 -> CORRECT specialist #0
+  SNR~17dB fading=0.88 interf=11.21 conf[0.51,0.50,0.78,0.76] trend=+0.0 -> CORRECT specialist #0
+  SNR~-2dB fading=0.28 interf=2.69 conf[0.72,0.43,0.36,0.64] trend=-0.6 -> CORRECT specialist #0
+  SNR~19dB fading=0.86 interf=10.06 conf[0.62,0.47,0.59,0.52] trend=+0.3 -> CORRECT specialist #0
+  SNR~12dB fading=0.68 interf=1.55 conf[0.28,0.26,0.34,0.29] trend=-0.0 -> CORRECT specialist #0
+  SNR~0dB fading=0.37 interf=3.23 conf[0.27,0.27,0.28,0.28] trend=-0.2 -> CORRECT specialist #0
+  SNR~1dB fading=0.39 interf=3.11 conf[0.29,0.26,0.28,0.28] trend=+0.2 -> CORRECT specialist #1
+  SNR~2dB fading=0.32 interf=2.82 conf[0.27,0.36,0.26,0.28] trend=-1.1 -> CORRECT specialist #3
+  SNR~-2dB fading=0.48 interf=3.24 conf[0.28,0.45,0.27,0.27] trend=-0.1 -> CORRECT specialist #3
+  SNR~23dB fading=0.71 interf=1.70 conf[0.27,0.71,0.34,0.29] trend=+0.5 -> CORRECT specialist #0
+  SNR~11dB fading=0.88 interf=9.41 conf[0.51,0.43,0.33,0.46] trend=+0.9 -> CORRECT specialist #1
+  SNR~13dB fading=0.71 interf=2.00 conf[0.28,0.27,0.34,0.29] trend=+0.2 -> CORRECT specialist #3
+  SNR~2dB fading=0.69 interf=1.23 conf[1.00,1.00,0.32,1.00] trend=-0.1 -> CORRECT specialist #0
+  SNR~13dB fading=0.75 interf=2.06 conf[0.29,0.86,0.34,0.28] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.42 interf=2.73 conf[0.30,0.26,0.28,0.30] trend=-0.4 -> CORRECT specialist #1
+  SNR~13dB fading=0.72 interf=2.03 conf[0.27,0.23,0.34,0.28] trend=-0.4 -> CORRECT specialist #3
+  SNR~3dB fading=0.32 interf=2.95 conf[0.27,0.25,0.27,0.29] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.61 interf=1.64 conf[0.31,0.26,0.34,0.29] trend=-1.0 -> CORRECT specialist #3
+
+Recent history (oldest->newest):
+  t=0: SNR~7dB fading=0.74 interf=1.55 conf[0.28,0.26,0.34,0.29]
+  t=1: SNR~8dB fading=0.68 interf=1.77 conf[0.46,0.81,0.34,0.90]
+  t=2: SNR~7dB fading=0.85 interf=3.57 conf[0.85,0.49,0.25,0.66]
+  t=3: SNR~11dB fading=0.76 interf=1.91 conf[0.28,0.26,0.34,0.28]
+  t=4: SNR~6dB fading=0.52 interf=2.27 conf[0.37,0.26,0.35,0.30]
+  t=5: SNR~11dB fading=0.81 interf=3.12 conf[0.24,0.26,0.33,0.29]
+Elapsed: t=5/130. Pick the least-mismatched specialist.
+
+=== CASE 2 ===
+Vehicular online AMR. Four specialists: #0 clean/MID-SNR, #1 multipath-FADING/MID-SNR, #2 clean/LOW-SNR, #3 co-channel-INTERFERENCE/MID-SNR. The SNR estimate LAGS reality, so use the TREND over time to anticipate transitions.
+Labeled examples from PAST drives (which specialist turned out correct) -- learn the mapping:
+  SNR~2dB fading=0.45 interf=2.98 conf[0.28,0.26,0.31,0.28] trend=+0.0 -> CORRECT specialist #3
+  SNR~13dB fading=0.79 interf=2.50 conf[0.98,0.97,0.30,1.00] trend=+0.0 -> CORRECT specialist #0
+  SNR~16dB fading=0.70 interf=1.93 conf[0.28,0.25,0.34,0.28] trend=+0.0 -> CORRECT specialist #0
+  SNR~9dB fading=0.91 interf=10.83 conf[0.83,0.39,0.69,0.64] trend=-0.4 -> CORRECT specialist #0
+  SNR~7dB fading=0.52 interf=5.80 conf[0.58,0.53,0.64,0.58] trend=+0.2 -> CORRECT specialist #0
+  SNR~13dB fading=0.57 interf=2.10 conf[0.46,0.26,0.35,0.30] trend=+0.4 -> CORRECT specialist #0
+  SNR~8dB fading=0.67 interf=4.75 conf[0.99,0.60,0.37,0.94] trend=-0.6 -> CORRECT specialist #0
+  SNR~17dB fading=0.88 interf=11.21 conf[0.51,0.50,0.78,0.76] trend=+0.0 -> CORRECT specialist #0
+  SNR~-2dB fading=0.28 interf=2.69 conf[0.72,0.43,0.36,0.64] trend=-0.6 -> CORRECT specialist #0
+  SNR~19dB fading=0.86 interf=10.06 conf[0.62,0.47,0.59,0.52] trend=+0.3 -> CORRECT specialist #0
+  SNR~12dB fading=0.68 interf=1.55 conf[0.28,0.26,0.34,0.29] trend=-0.0 -> CORRECT specialist #0
+  SNR~0dB fading=0.37 interf=3.23 conf[0.27,0.27,0.28,0.28] trend=-0.2 -> CORRECT specialist #0
+  SNR~1dB fading=0.39 interf=3.11 conf[0.29,0.26,0.28,0.28] trend=+0.2 -> CORRECT specialist #1
+  SNR~2dB fading=0.32 interf=2.82 conf[0.27,0.36,0.26,0.28] trend=-1.1 -> CORRECT specialist #3
+  SNR~-2dB fading=0.48 interf=3.24 conf[0.28,0.45,0.27,0.27] trend=-0.1 -> CORRECT specialist #3
+  SNR~23dB fading=0.71 interf=1.70 conf[0.27,0.71,0.34,0.29] trend=+0.5 -> CORRECT specialist #0
+  SNR~11dB fading=0.88 interf=9.41 conf[0.51,0.43,0.33,0.46] trend=+0.9 -> CORRECT specialist #1
+  SNR~13dB fading=0.71 interf=2.00 conf[0.28,0.27,0.34,0.29] trend=+0.2 -> CORRECT specialist #3
+  SNR~2dB fading=0.69 interf=1.23 conf[1.00,1.00,0.32,1.00] trend=-0.1 -> CORRECT specialist #0
+  SNR~13dB fading=0.75 interf=2.06 conf[0.29,0.86,0.34,0.28] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.42 interf=2.73 conf[0.30,0.26,0.28,0.30] trend=-0.4 -> CORRECT specialist #1
+  SNR~13dB fading=0.72 interf=2.03 conf[0.27,0.23,0.34,0.28] trend=-0.4 -> CORRECT specialist #3
+  SNR~3dB fading=0.32 interf=2.95 conf[0.27,0.25,0.27,0.29] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.61 interf=1.64 conf[0.31,0.26,0.34,0.29] trend=-1.0 -> CORRECT specialist #3
+
+Recent history (oldest->newest):
+  t=2: SNR~7dB fading=0.85 interf=3.57 conf[0.85,0.49,0.25,0.66]
+  t=3: SNR~11dB fading=0.76 interf=1.91 conf[0.28,0.26,0.34,0.28]
+  t=4: SNR~6dB fading=0.52 interf=2.27 conf[0.37,0.26,0.35,0.30]
+  t=5: SNR~11dB fading=0.81 interf=3.12 conf[0.24,0.26,0.33,0.29]
+  t=6: SNR~8dB fading=0.62 interf=1.58 conf[0.29,0.27,0.34,0.28]
+  t=7: SNR~13dB fading=0.43 interf=3.82 conf[0.28,0.26,0.28,0.30]
+  t=8: SNR~13dB fading=0.55 interf=3.57 conf[0.30,0.26,0.28,0.28]
+  t=9: SNR~12dB fading=0.42 interf=5.65 conf[0.29,0.26,0.30,0.28]
+  t=10: SNR~13dB fading=0.47 interf=5.10 conf[0.30,0.26,0.29,0.32]
+Elapsed: t=10/130. Pick the least-mismatched specialist.
+
+=== CASE 3 ===
+Vehicular online AMR. Four specialists: #0 clean/MID-SNR, #1 multipath-FADING/MID-SNR, #2 clean/LOW-SNR, #3 co-channel-INTERFERENCE/MID-SNR. The SNR estimate LAGS reality, so use the TREND over time to anticipate transitions.
+Labeled examples from PAST drives (which specialist turned out correct) -- learn the mapping:
+  SNR~2dB fading=0.45 interf=2.98 conf[0.28,0.26,0.31,0.28] trend=+0.0 -> CORRECT specialist #3
+  SNR~13dB fading=0.79 interf=2.50 conf[0.98,0.97,0.30,1.00] trend=+0.0 -> CORRECT specialist #0
+  SNR~16dB fading=0.70 interf=1.93 conf[0.28,0.25,0.34,0.28] trend=+0.0 -> CORRECT specialist #0
+  SNR~9dB fading=0.91 interf=10.83 conf[0.83,0.39,0.69,0.64] trend=-0.4 -> CORRECT specialist #0
+  SNR~7dB fading=0.52 interf=5.80 conf[0.58,0.53,0.64,0.58] trend=+0.2 -> CORRECT specialist #0
+  SNR~13dB fading=0.57 interf=2.10 conf[0.46,0.26,0.35,0.30] trend=+0.4 -> CORRECT specialist #0
+  SNR~8dB fading=0.67 interf=4.75 conf[0.99,0.60,0.37,0.94] trend=-0.6 -> CORRECT specialist #0
+  SNR~17dB fading=0.88 interf=11.21 conf[0.51,0.50,0.78,0.76] trend=+0.0 -> CORRECT specialist #0
+  SNR~-2dB fading=0.28 interf=2.69 conf[0.72,0.43,0.36,0.64] trend=-0.6 -> CORRECT specialist #0
+  SNR~19dB fading=0.86 interf=10.06 conf[0.62,0.47,0.59,0.52] trend=+0.3 -> CORRECT specialist #0
+  SNR~12dB fading=0.68 interf=1.55 conf[0.28,0.26,0.34,0.29] trend=-0.0 -> CORRECT specialist #0
+  SNR~0dB fading=0.37 interf=3.23 conf[0.27,0.27,0.28,0.28] trend=-0.2 -> CORRECT specialist #0
+  SNR~1dB fading=0.39 interf=3.11 conf[0.29,0.26,0.28,0.28] trend=+0.2 -> CORRECT specialist #1
+  SNR~2dB fading=0.32 interf=2.82 conf[0.27,0.36,0.26,0.28] trend=-1.1 -> CORRECT specialist #3
+  SNR~-2dB fading=0.48 interf=3.24 conf[0.28,0.45,0.27,0.27] trend=-0.1 -> CORRECT specialist #3
+  SNR~23dB fading=0.71 interf=1.70 conf[0.27,0.71,0.34,0.29] trend=+0.5 -> CORRECT specialist #0
+  SNR~11dB fading=0.88 interf=9.41 conf[0.51,0.43,0.33,0.46] trend=+0.9 -> CORRECT specialist #1
+  SNR~13dB fading=0.71 interf=2.00 conf[0.28,0.27,0.34,0.29] trend=+0.2 -> CORRECT specialist #3
+  SNR~2dB fading=0.69 interf=1.23 conf[1.00,1.00,0.32,1.00] trend=-0.1 -> CORRECT specialist #0
+  SNR~13dB fading=0.75 interf=2.06 conf[0.29,0.86,0.34,0.28] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.42 interf=2.73 conf[0.30,0.26,0.28,0.30] trend=-0.4 -> CORRECT specialist #1
+  SNR~13dB fading=0.72 interf=2.03 conf[0.27,0.23,0.34,0.28] trend=-0.4 -> CORRECT specialist #3
+  SNR~3dB fading=0.32 interf=2.95 conf[0.27,0.25,0.27,0.29] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.61 interf=1.64 conf[0.31,0.26,0.34,0.29] trend=-1.0 -> CORRECT specialist #3
+
+Recent history (oldest->newest):
+  t=7: SNR~13dB fading=0.43 interf=3.82 conf[0.28,0.26,0.28,0.30]
+  t=8: SNR~13dB fading=0.55 interf=3.57 conf[0.30,0.26,0.28,0.28]
+  t=9: SNR~12dB fading=0.42 interf=5.65 conf[0.29,0.26,0.30,0.28]
+  t=10: SNR~13dB fading=0.47 interf=5.10 conf[0.30,0.26,0.29,0.32]
+  t=11: SNR~12dB fading=0.50 interf=4.13 conf[0.27,0.25,0.31,0.29]
+  t=12: SNR~10dB fading=0.62 interf=4.51 conf[0.28,0.23,0.30,0.28]
+  t=13: SNR~11dB fading=0.68 interf=3.12 conf[0.28,0.26,0.34,0.31]
+  t=14: SNR~8dB fading=0.52 interf=1.73 conf[0.27,0.27,0.34,0.29]
+  t=15: SNR~14dB fading=0.75 interf=2.03 conf[0.29,0.26,0.35,0.31]
+Elapsed: t=15/130. Pick the least-mismatched specialist.
+
+=== CASE 4 ===
+Vehicular online AMR. Four specialists: #0 clean/MID-SNR, #1 multipath-FADING/MID-SNR, #2 clean/LOW-SNR, #3 co-channel-INTERFERENCE/MID-SNR. The SNR estimate LAGS reality, so use the TREND over time to anticipate transitions.
+Labeled examples from PAST drives (which specialist turned out correct) -- learn the mapping:
+  SNR~2dB fading=0.45 interf=2.98 conf[0.28,0.26,0.31,0.28] trend=+0.0 -> CORRECT specialist #3
+  SNR~13dB fading=0.79 interf=2.50 conf[0.98,0.97,0.30,1.00] trend=+0.0 -> CORRECT specialist #0
+  SNR~16dB fading=0.70 interf=1.93 conf[0.28,0.25,0.34,0.28] trend=+0.0 -> CORRECT specialist #0
+  SNR~9dB fading=0.91 interf=10.83 conf[0.83,0.39,0.69,0.64] trend=-0.4 -> CORRECT specialist #0
+  SNR~7dB fading=0.52 interf=5.80 conf[0.58,0.53,0.64,0.58] trend=+0.2 -> CORRECT specialist #0
+  SNR~13dB fading=0.57 interf=2.10 conf[0.46,0.26,0.35,0.30] trend=+0.4 -> CORRECT specialist #0
+  SNR~8dB fading=0.67 interf=4.75 conf[0.99,0.60,0.37,0.94] trend=-0.6 -> CORRECT specialist #0
+  SNR~17dB fading=0.88 interf=11.21 conf[0.51,0.50,0.78,0.76] trend=+0.0 -> CORRECT specialist #0
+  SNR~-2dB fading=0.28 interf=2.69 conf[0.72,0.43,0.36,0.64] trend=-0.6 -> CORRECT specialist #0
+  SNR~19dB fading=0.86 interf=10.06 conf[0.62,0.47,0.59,0.52] trend=+0.3 -> CORRECT specialist #0
+  SNR~12dB fading=0.68 interf=1.55 conf[0.28,0.26,0.34,0.29] trend=-0.0 -> CORRECT specialist #0
+  SNR~0dB fading=0.37 interf=3.23 conf[0.27,0.27,0.28,0.28] trend=-0.2 -> CORRECT specialist #0
+  SNR~1dB fading=0.39 interf=3.11 conf[0.29,0.26,0.28,0.28] trend=+0.2 -> CORRECT specialist #1
+  SNR~2dB fading=0.32 interf=2.82 conf[0.27,0.36,0.26,0.28] trend=-1.1 -> CORRECT specialist #3
+  SNR~-2dB fading=0.48 interf=3.24 conf[0.28,0.45,0.27,0.27] trend=-0.1 -> CORRECT specialist #3
+  SNR~23dB fading=0.71 interf=1.70 conf[0.27,0.71,0.34,0.29] trend=+0.5 -> CORRECT specialist #0
+  SNR~11dB fading=0.88 interf=9.41 conf[0.51,0.43,0.33,0.46] trend=+0.9 -> CORRECT specialist #1
+  SNR~13dB fading=0.71 interf=2.00 conf[0.28,0.27,0.34,0.29] trend=+0.2 -> CORRECT specialist #3
+  SNR~2dB fading=0.69 interf=1.23 conf[1.00,1.00,0.32,1.00] trend=-0.1 -> CORRECT specialist #0
+  SNR~13dB fading=0.75 interf=2.06 conf[0.29,0.86,0.34,0.28] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.42 interf=2.73 conf[0.30,0.26,0.28,0.30] trend=-0.4 -> CORRECT specialist #1
+  SNR~13dB fading=0.72 interf=2.03 conf[0.27,0.23,0.34,0.28] trend=-0.4 -> CORRECT specialist #3
+  SNR~3dB fading=0.32 interf=2.95 conf[0.27,0.25,0.27,0.29] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.61 interf=1.64 conf[0.31,0.26,0.34,0.29] trend=-1.0 -> CORRECT specialist #3
+
+Recent history (oldest->newest):
+  t=12: SNR~10dB fading=0.62 interf=4.51 conf[0.28,0.23,0.30,0.28]
+  t=13: SNR~11dB fading=0.68 interf=3.12 conf[0.28,0.26,0.34,0.31]
+  t=14: SNR~8dB fading=0.52 interf=1.73 conf[0.27,0.27,0.34,0.29]
+  t=15: SNR~14dB fading=0.75 interf=2.03 conf[0.29,0.26,0.35,0.31]
+  t=16: SNR~8dB fading=0.96 interf=13.48 conf[0.87,0.41,0.65,0.50]
+  t=17: SNR~9dB fading=0.67 interf=1.49 conf[0.28,0.26,0.34,0.28]
+  t=18: SNR~11dB fading=0.66 interf=2.35 conf[0.30,0.26,0.34,0.30]
+  t=19: SNR~8dB fading=0.82 interf=5.71 conf[0.70,0.53,0.30,0.63]
+  t=20: SNR~12dB fading=0.86 interf=7.27 conf[0.63,0.50,0.84,0.76]
+Elapsed: t=20/130. Pick the least-mismatched specialist.
+
+=== CASE 5 ===
+Vehicular online AMR. Four specialists: #0 clean/MID-SNR, #1 multipath-FADING/MID-SNR, #2 clean/LOW-SNR, #3 co-channel-INTERFERENCE/MID-SNR. The SNR estimate LAGS reality, so use the TREND over time to anticipate transitions.
+Labeled examples from PAST drives (which specialist turned out correct) -- learn the mapping:
+  SNR~2dB fading=0.45 interf=2.98 conf[0.28,0.26,0.31,0.28] trend=+0.0 -> CORRECT specialist #3
+  SNR~13dB fading=0.79 interf=2.50 conf[0.98,0.97,0.30,1.00] trend=+0.0 -> CORRECT specialist #0
+  SNR~16dB fading=0.70 interf=1.93 conf[0.28,0.25,0.34,0.28] trend=+0.0 -> CORRECT specialist #0
+  SNR~9dB fading=0.91 interf=10.83 conf[0.83,0.39,0.69,0.64] trend=-0.4 -> CORRECT specialist #0
+  SNR~7dB fading=0.52 interf=5.80 conf[0.58,0.53,0.64,0.58] trend=+0.2 -> CORRECT specialist #0
+  SNR~13dB fading=0.57 interf=2.10 conf[0.46,0.26,0.35,0.30] trend=+0.4 -> CORRECT specialist #0
+  SNR~8dB fading=0.67 interf=4.75 conf[0.99,0.60,0.37,0.94] trend=-0.6 -> CORRECT specialist #0
+  SNR~17dB fading=0.88 interf=11.21 conf[0.51,0.50,0.78,0.76] trend=+0.0 -> CORRECT specialist #0
+  SNR~-2dB fading=0.28 interf=2.69 conf[0.72,0.43,0.36,0.64] trend=-0.6 -> CORRECT specialist #0
+  SNR~19dB fading=0.86 interf=10.06 conf[0.62,0.47,0.59,0.52] trend=+0.3 -> CORRECT specialist #0
+  SNR~12dB fading=0.68 interf=1.55 conf[0.28,0.26,0.34,0.29] trend=-0.0 -> CORRECT specialist #0
+  SNR~0dB fading=0.37 interf=3.23 conf[0.27,0.27,0.28,0.28] trend=-0.2 -> CORRECT specialist #0
+  SNR~1dB fading=0.39 interf=3.11 conf[0.29,0.26,0.28,0.28] trend=+0.2 -> CORRECT specialist #1
+  SNR~2dB fading=0.32 interf=2.82 conf[0.27,0.36,0.26,0.28] trend=-1.1 -> CORRECT specialist #3
+  SNR~-2dB fading=0.48 interf=3.24 conf[0.28,0.45,0.27,0.27] trend=-0.1 -> CORRECT specialist #3
+  SNR~23dB fading=0.71 interf=1.70 conf[0.27,0.71,0.34,0.29] trend=+0.5 -> CORRECT specialist #0
+  SNR~11dB fading=0.88 interf=9.41 conf[0.51,0.43,0.33,0.46] trend=+0.9 -> CORRECT specialist #1
+  SNR~13dB fading=0.71 interf=2.00 conf[0.28,0.27,0.34,0.29] trend=+0.2 -> CORRECT specialist #3
+  SNR~2dB fading=0.69 interf=1.23 conf[1.00,1.00,0.32,1.00] trend=-0.1 -> CORRECT specialist #0
+  SNR~13dB fading=0.75 interf=2.06 conf[0.29,0.86,0.34,0.28] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.42 interf=2.73 conf[0.30,0.26,0.28,0.30] trend=-0.4 -> CORRECT specialist #1
+  SNR~13dB fading=0.72 interf=2.03 conf[0.27,0.23,0.34,0.28] trend=-0.4 -> CORRECT specialist #3
+  SNR~3dB fading=0.32 interf=2.95 conf[0.27,0.25,0.27,0.29] trend=+0.2 -> CORRECT specialist #0
+  SNR~12dB fading=0.61 interf=1.64 conf[0.31,0.26,0.34,0.29] trend=-1.0 -> CORRECT specialist #3
+
+Recent history (oldest->newest):
+  t=17: SNR~9dB fading=0.67 interf=1.49 conf[0.28,0.26,0.34,0.28]
+  t=18: SNR~11dB fading=0.66 interf=2.35 conf[0.30,0.26,0.34,0.30]
+  t=19: SNR~8dB fading=0.82 interf=5.71 conf[0.70,0.53,0.30,0.63]
+  t=20: SNR~12dB fading=0.86 interf=7.27 conf[0.63,0.50,0.84,0.76]
+  t=21: SNR~10dB fading=0.90 interf=8.42 conf[0.60,0.39,0.32,0.59]
+  t=22: SNR~9dB fading=0.75 interf=2.47 conf[0.69,0.60,0.42,0.58]
+  t=23: SNR~12dB fading=0.76 interf=2.36 conf[0.25,0.26,0.33,0.29]
+  t=24: SNR~10dB fading=0.71 interf=1.74 conf[0.30,0.23,0.35,0.29]
+  t=25: SNR~15dB fading=0.63 interf=1.81 conf[0.28,0.27,0.34,0.29]
+Elapsed: t=25/130. Pick the least-mismatched specialist.
+
+
+Output the 6 lines now.

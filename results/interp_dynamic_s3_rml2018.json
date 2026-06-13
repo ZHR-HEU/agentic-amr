@@ -1,0 +1,240 @@
+{
+  "dataset": "rml2018",
+  "model": "Qwen3-8B",
+  "T": 220,
+  "seg": 55,
+  "segJ": {
+    "oracle": {
+      "0": 0.6032727272727274,
+      "1": 0.5734545454545457,
+      "2": 0.6761818181818184,
+      "3": 0.47018181818181837
+    },
+    "static_gbdt": {
+      "0": 0.29727272727272747,
+      "1": 0.3080000000000003,
+      "2": -0.09436363636363629,
+      "3": 0.23254545454545467
+    },
+    "fixed_rule": {
+      "0": 0.17436363636363636,
+      "1": 0.06000000000000003,
+      "2": 0.10345454545454545,
+      "3": 0.03254545454545457
+    },
+    "online_rule": {
+      "0": 0.07836363636363637,
+      "1": -0.025454545454545445,
+      "2": 0.1287272727272727,
+      "3": -0.1330909090909091
+    },
+    "bandit": {
+      "0": 0.22345454545454543,
+      "1": 0.25072727272727285,
+      "2": -0.15345454545454545,
+      "3": 0.17490909090909088
+    },
+    "llm_nomem": {
+      "0": -0.03836363636363631,
+      "1": -0.06399999999999995,
+      "2": 0.14600000000000002,
+      "3": -0.12545454545454537
+    },
+    "llm_online_mem": {
+      "0": 0.2021818181818182,
+      "1": 0.23272727272727292,
+      "2": 0.03181818181818183,
+      "3": 0.12890909090909095
+    }
+  },
+  "overallJ": {
+    "oracle": 0.5807727272727276,
+    "static_gbdt": 0.18586363636363654,
+    "fixed_rule": 0.0925909090909091,
+    "online_rule": 0.012136363636363627,
+    "bandit": 0.12390909090909093,
+    "llm_nomem": -0.020454545454545402,
+    "llm_online_mem": 0.14890909090909096
+  },
+  "novelty_reject_recall": {
+    "oracle": 1.0,
+    "static_gbdt": 0.0,
+    "fixed_rule": 0.46153846153846156,
+    "online_rule": 0.5384615384615384,
+    "bandit": 0.0,
+    "llm_nomem": 0.6538461538461539,
+    "llm_online_mem": 0.34615384615384615
+  },
+  "adaptation_lag_steps": {
+    "oracle": 0,
+    "static_gbdt": 55,
+    "fixed_rule": 15,
+    "online_rule": 0,
+    "bandit": 55,
+    "llm_nomem": 7,
+    "llm_online_mem": 8
+  },
+  "llm_faithfulness": 0.30454545454545456,
+  "examples": [
+    {
+      "t": 0,
+      "seg": 0,
+      "SNR": 18,
+      "unk": false,
+      "ood_P": 0.16,
+      "dist_P": 0.75,
+      "action": "A1",
+      "rationale": "Confidence is high (P0.88) with low entropy (P0.10), indicating a confident in-distribution prediction, while energy_OOD and prototype_distance are moderate. No signs of drift or trend detected.   ANS"
+    },
+    {
+      "t": 12,
+      "seg": 0,
+      "SNR": 18,
+      "unk": false,
+      "ood_P": 0.25,
+      "dist_P": 0.81,
+      "action": "A1",
+      "rationale": "The recent SNR trend shows a drift towards higher values (18dB), and the current state has a high prototype_distance (P0.81) but moderate confidence (P0.72). While the model is somewhat confident, the"
+    },
+    {
+      "t": 24,
+      "seg": 0,
+      "SNR": 12,
+      "unk": false,
+      "ood_P": 0.38,
+      "dist_P": 0.66,
+      "action": "A1",
+      "rationale": "Recent experiences show that at similar confidence and entropy levels with moderate energy_OOD and prototype_distance, A1 is preferred when SNR is around 12-18 dB, especially with confidence above 0.5"
+    },
+    {
+      "t": 36,
+      "seg": 0,
+      "SNR": 12,
+      "unk": false,
+      "ood_P": 0.53,
+      "dist_P": 0.5,
+      "action": "A1",
+      "rationale": "Recent experiences show that at lower SNR (12dB), A1 is chosen when confidence is moderate (P0.46) and energy_OOD is low (P0.37). Current state has moderate confidence (P0.38), moderate entropy (P0.51"
+    },
+    {
+      "t": 48,
+      "seg": 0,
+      "SNR": 14,
+      "unk": false,
+      "ood_P": 0.12,
+      "dist_P": 0.89,
+      "action": "A1",
+      "rationale": "Recent experiences show that at SNR 14dB with high confidence (P0.87), low entropy (P0.12), and moderate energy_OOD (P0.12), A1 is the preferred action. Although prototype_distance is high (P0.89), co"
+    },
+    {
+      "t": 60,
+      "seg": 1,
+      "SNR": 16,
+      "unk": false,
+      "ood_P": 0.07,
+      "dist_P": 0.98,
+      "action": "A1",
+      "rationale": "Recent experiences show that high confidence (P0.88+), low entropy (P0.10), and moderate prototype distance (P0.95+) with SNR around 14-18dB typically lead to A1. Current state has confidence P0.89, e"
+    },
+    {
+      "t": 72,
+      "seg": 1,
+      "SNR": 10,
+      "unk": false,
+      "ood_P": 0.41,
+      "dist_P": 0.68,
+      "action": "A1",
+      "rationale": "The recent SNR trend shows a drift from higher to lower values, with current SNR at 10dB. The prototype_distance is high (P0.68), but confidence and entropy are moderate. Recent experiences at similar"
+    },
+    {
+      "t": 84,
+      "seg": 1,
+      "SNR": 6,
+      "unk": false,
+      "ood_P": 0.25,
+      "dist_P": 0.7,
+      "action": "A1",
+      "rationale": "Recent experiences show that at similar confidence (P0.69-0.86), entropy (P0.25-0.38), and prototype distance (P0.69-0.89) levels, with SNR trending downward from 10dB to 6dB, A1 is often chosen when "
+    },
+    {
+      "t": 96,
+      "seg": 1,
+      "SNR": 6,
+      "unk": false,
+      "ood_P": 0.31,
+      "dist_P": 0.63,
+      "action": "A1",
+      "rationale": "The recent trend shows SNR fluctuating around 4-6 dB, with a mix of A1 and A3 actions. Current confidence (0.60) and entropy (0.38) are moderate, but energy_OOD (0.31) and prototype_distance (0.63) su"
+    },
+    {
+      "t": 108,
+      "seg": 1,
+      "SNR": 2,
+      "unk": false,
+      "ood_P": 0.4,
+      "dist_P": 0.69,
+      "action": "A1",
+      "rationale": "The recent SNR trend shows instability with frequent drops to 0dB, and the current state has a high prototype_distance (P0.69) and moderate confidence (P0.42). While confidence is not extremely low, t"
+    },
+    {
+      "t": 111,
+      "seg": 2,
+      "SNR": -2,
+      "unk": true,
+      "ood_P": 1.0,
+      "dist_P": 0.41,
+      "action": "A2",
+      "rationale": "Recent experiences show that at low SNR (-2dB), high energy_OOD (P1.00) and high prototype_distance (P0.41) suggest potential OOD, but confidence (P0.43) and entropy (P0.65) are moderate. The SNR tren"
+    },
+    {
+      "t": 112,
+      "seg": 2,
+      "SNR": -2,
+      "unk": true,
+      "ood_P": 0.61,
+      "dist_P": 0.4,
+      "action": "A1",
+      "rationale": "Recent experiences show that at low SNR (e.g., 0dB, 2dB), confident decisions (conf > 0.4) with moderate entropy and energy_OOD are often associated with A1. The current state has confidence=0.56, whi"
+    },
+    {
+      "t": 113,
+      "seg": 2,
+      "SNR": -2,
+      "unk": true,
+      "ood_P": 0.97,
+      "dist_P": 0.36,
+      "action": "A4",
+      "rationale": "Recent experiences show that at low SNR (-2dB), high energy_OOD and high prototype_distance correlate with A4, while moderate confidence and entropy suggest A1 or A2. Current state has high energy_OOD"
+    },
+    {
+      "t": 115,
+      "seg": 2,
+      "SNR": 0,
+      "unk": true,
+      "ood_P": 0.5,
+      "dist_P": 0.42,
+      "action": "A1",
+      "rationale": "The recent SNR trend shows a drift from -2dB to 0dB, indicating possible regime change. The current state has moderate confidence and entropy, with energy_OOD and prototype_distance suggesting some un"
+    },
+    {
+      "t": 117,
+      "seg": 2,
+      "SNR": 0,
+      "unk": true,
+      "ood_P": 1.0,
+      "dist_P": 0.4,
+      "action": "A1",
+      "rationale": "Recent experiences show that at 0dB SNR, A1 is chosen when confidence is moderate (P0.56-P0.76) and entropy is moderate to low, with energy_OOD and prototype_distance also in moderate ranges. The curr"
+    },
+    {
+      "t": 119,
+      "seg": 2,
+      "SNR": 2,
+      "unk": true,
+      "ood_P": 0.4,
+      "dist_P": 0.63,
+      "action": "A1",
+      "rationale": "Recent experiences show that at low SNR (2dB), moderate confidence (P0.61), and moderate prototype distance (P0.63), A1 is the preferred action. Although energy_OOD is moderate (P0.40), the confidence"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+﻿# Default config for online AMR active learning (IQ-free RF control-plane).
+seed: 42
+device: cuda:0          # CUDA_VISIBLE_DEVICES remaps this
+
+dataset:
+  name: rml2016                 # rml2016 | rml2018
+  # Dataset files are not redistributed. Put local copies here or override via
+  # --set dataset.rml2016_path=/path/to/RML2016.10a_dict.pkl
+  # --set dataset.rml2018_path=/path/to/GOLD_XYZ_OSC.0001_1024.hdf5
+  rml2016_path: data/RML2016.10a_dict.pkl
+  rml2018_path: data/GOLD_XYZ_OSC.0001_1024.hdf5
+  rml2018_max_per_class_snr: 200   # subsample cap per (class, snr) block
+  normalize: per_sample            # per_sample (zero-mean/unit-std) | none
+  test_per_class: 100              # held-out test samples per class (stratified over snr)
+
+model:
+  backbone: cnn          # cnn | cnngru
+  hidden: 128
+  dropout: 0.3
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  warmup_epochs: 8       # epochs on the seed labeled set
+  update_epochs: 3       # incremental epochs per acquisition step
+  batch_size: 256
+  replay: full           # full (train on whole labeled buffer each step) | recent
+
+stream:
+  regime: snr_ramp       # snr_ramp | snr_step | channel_drift | class_emergence | mixed
+  n_steps: 12            # acquisition steps in the episode
+  pool_size: 500         # unlabeled candidates presented per step
+  budget_per_step: 20    # label budget queried per step
+  seed_labeled: 200      # initial labeled seed set size
+  warmup_snr: [0, 18]    # SNR range of the seed/warmup pool
+
+controller:
+  name: random           # see amrl.controllers.registry
+  criteria: [entropy, margin, coreset, class_balance, random]
+  # --- llm controller ---
+  endpoint: http://localhost:8000/v1
+  model: Qwen3-8B
+  temperature: 0.0
+  max_tokens: 256
+  enable_thinking: false
+  llm_timeout: 30
+  llm_fallback: fixed_uniform   # controller used if the LLM call/parse fails
+  # --- rule / fixed_hybrid weights ---
+  ece_gate_threshold: 0.15      # above this ECE, rule down-weights uncertainty criteria
+
+eval:
+  ece_bins: 15
+  target_acc: 0.6        # for labels-to-target metric
+  out_dir: ../results    # relative to code/
+
+log:
+  level: INFO

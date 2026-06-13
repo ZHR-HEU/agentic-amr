@@ -1,0 +1,19 @@
+{
+  "frontier_model": "gpt-5.5 (codex)",
+  "per_route": {
+    "into_tunnel": 0.20833333333333334,
+    "congested_canyon": 0.2916666666666667,
+    "stop_go": 0.3333333333333333
+  },
+  "aggregate_novel": 0.2777777777777778,
+  "n_scored": 72,
+  "unparsed": 0,
+  "baselines_from_qwen_iclfb_run": {
+    "gbdt_hist": 0.318,
+    "bandit": 0.318,
+    "random": 0.313,
+    "conf_rule": 0.295,
+    "llm_qwen_icl": 0.295,
+    "oracle": 0.644
+  }
+}

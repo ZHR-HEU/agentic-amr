@@ -1,0 +1,9 @@
+﻿# Core dependencies for reproducing the experiments.
+numpy>=1.24
+torch>=2.1
+h5py>=3.8
+scikit-learn>=1.2
+openai>=1.0
+pyyaml>=6.0
+tqdm>=4.6
+scipy>=1.10

@@ -80,14 +80,15 @@ These results support the intended boundary: LLMs are used for diagnostic tool o
 
 ## Citation
 
-If this repository is useful, please cite the paper:
+This work is a manuscript currently under review and has not yet been published.
+If this repository is useful, you may reference it as:
 
 ```bibtex
-@inproceedings{ji2026agenticamr,
+@unpublished{ji2026agenticamr,
   title={Zero-Shot Compositional Tool Planning for Adaptive Online Modulation Recognition with an IQ-Free LLM Controller},
   author={Ji, Min and Sun, Lu and Zha, Haoran and Lin, Yun},
-  booktitle={IEEE Vehicular Technology Conference},
-  year={2026}
+  year={2026},
+  note={Manuscript under review}
 }
 ```
 

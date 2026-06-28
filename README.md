@@ -11,9 +11,8 @@ code/
   amrl/              core data, model, state, controller, and RF-tool modules
   configs/           YAML configuration
   scripts/           experiment and plotting scripts
-results/             JSON result artifacts and paper-level summary
-figs/                figures used in the paper
-paper/               compiled paper PDF
+results/             JSON result artifacts and summary
+figs/                figures
 docs/                reproducibility notes
 ```
 

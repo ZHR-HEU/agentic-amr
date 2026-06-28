@@ -81,13 +81,14 @@ These results support the intended boundary: LLMs are used for diagnostic tool o
 ## Citation
 
 This work is a manuscript currently under review and has not yet been published.
-If this repository is useful, you may reference it as:
+If this repository is useful, you may cite the code repository:
 
 ```bibtex
-@unpublished{ji2026agenticamr,
-  title={Zero-Shot Compositional Tool Planning for Adaptive Online Modulation Recognition with an IQ-Free LLM Controller},
+@misc{ji2026agenticamr,
+  title={Agentic AMR: Zero-Shot Compositional Tool Planning for Adaptive Online Modulation Recognition with an IQ-Free LLM Controller},
   author={Ji, Min and Sun, Lu and Zha, Haoran and Lin, Yun},
   year={2026},
+  howpublished={\url{https://github.com/ZHR-HEU/agentic-amr}},
   note={Manuscript under review}
 }
 ```
